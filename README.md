@@ -1,4 +1,4 @@
-# M5Prog
+# Prog
 
 ## PROG les 1: Herhaling Functions, Classes en Arrays
 
@@ -6,26 +6,26 @@
 
 Ik heb een Functions, Methods, Parameters & return type gebruikt.
 
-![Balls falling](Gifs/CreateBall.gif)
+![Balls falling](Gifs/M5Prog/CreateBall.gif)
 
-[CreateBall Script](M5Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/Ball.cs)
+[CreateBall Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/Ball.cs)
 
 ### Opdracht 2 Class, Object, Constructor & Instantiate
 
 Ik heb Class, Object, Constructor en Instantiate gebruikt.
 
-![Towers spawning](Gifs/Towers.gif)
+![Towers spawning](Gifs/M5Prog/Towers.gif)
 
-[Game Script](M5Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/Gvame.cs)
+[Game Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/Gvame.cs)
 
 ### Opdracht 3 List en loop
 
 Ik heb Lists en loops gebruikt.
 
-![Cubes spawneing](Gifs/EnemySpawner.gif)
+![Cubes spawneing](Gifs/M5Prog/EnemySpawner.gif)
 
-[Enemy Spawner Script](M5Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/EnemySpawner.cs) \
-[Enemy Controller Script](M5Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/EnemyController.cs)
+[Enemy Spawner Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/EnemySpawner.cs) \
+[Enemy Controller Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/EnemyController.cs)
 
 ## PROG les 2: Action Events
 
@@ -33,11 +33,11 @@ Ik heb Lists en loops gebruikt.
 
 Ik heb Action Events gebruikt.
 
-![Player moving and pickup up spheres](Gifs/Scoreboard.gif)
+![Player moving and pickup up spheres](Gifs/M5Prog/Scoreboard.gif)
 
-[Player Movement Script](M5Prog/Assets/Scripts/02_Action_Events/PlayerController.cs) \
-[Pickup Script](M5Prog/Assets/Scripts/02_Action_Events/Pickup.cs) \
-[Scoreboard Script](M5Prog/Assets/Scripts/02_Action_Events/ScoreBoard.cs)
+[Player Movement Script](Prog/Assets/Scripts/02_Action_Events/PlayerController.cs) \
+[Pickup Script](Prog/Assets/Scripts/02_Action_Events/Pickup.cs) \
+[Scoreboard Script](Prog/Assets/Scripts/02_Action_Events/ScoreBoard.cs)
 
 ## PROG les 3: Debugging
 
@@ -85,13 +85,13 @@ Ik heb de movement scripts gecombineerd en de message scripts gecombineerd.
 
 Ik heb inheritance gebruikt.
 
-![Player shooting enemies](Gifs/ShootEnemies.gif)
+![Player shooting enemies](Gifs/M5Prog/ShootEnemies.gif)
 
-[Shoot From Camera Script](M5Prog/Assets/Scripts/05_OOP_Inherritance/ShootFromCamera.cs) \
-[Projectile Script](M5Prog/Assets/Scripts/05_OOP_Inherritance/Projectile.cs) \
-[Enemy Parent Script](M5Prog/Assets/Scripts/05_OOP_Inherritance/EnemyParent.cs) \
-[Brute Script](M5Prog/Assets/Scripts/05_OOP_Inherritance/Brute.cs) \
-[Elf Script](M5Prog/Assets/Scripts/05_OOP_Inherritance/Elf.cs)
+[Shoot From Camera Script](Prog/Assets/Scripts/05_OOP_Inherritance/ShootFromCamera.cs) \
+[Projectile Script](Prog/Assets/Scripts/05_OOP_Inherritance/Projectile.cs) \
+[Enemy Parent Script](Prog/Assets/Scripts/05_OOP_Inherritance/EnemyParent.cs) \
+[Brute Script](Prog/Assets/Scripts/05_OOP_Inherritance/Brute.cs) \
+[Elf Script](Prog/Assets/Scripts/05_OOP_Inherritance/Elf.cs)
 
 ### Opdracht 9, Encapsulation
 
