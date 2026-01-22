@@ -24,7 +24,7 @@ Ik heb Class, Object, Constructor en Instantiate gebruikt.
 
 Ik heb Lists en loops gebruikt.
 
-![Cubes spawneing](Gifs/M5Prog/EnemySpawner.gif)
+![Cubes spawning](Gifs/M5Prog/EnemySpawner.gif)
 
 [Enemy Spawner Script](Prog/Assets/Scripts/M5Prog/01_Herhaling_Functions_Classes_Arrays/EnemySpawner.cs) \
 [Enemy Controller Script](Prog/Assets/Scripts/M5Prog/01_Herhaling_Functions_Classes_Arrays/EnemyController.cs)
@@ -395,12 +395,38 @@ public class Enemy : MonoBehaviour {
 
 Ik heb data structuren gebruikt om een inventory te maken.
 
-![](Gifs/M6Prog/Inventory.gif)
+![Filtering items by type](Gifs/M6Prog/Inventory.gif)
 
 [Inventory Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/Inventory.cs) \
 [Item Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/Item.cs) \
 [Item Stats Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/ItemStats.cs) \
 [Item Template Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/ItemTemplate.cs) \
 [Item Type Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/ItemType.cs)
+
+## Les 4 - Delegates
+
+### Opdracht 4: Score Collection Game
+
+Ik heb een score collection game gemaakt met loose coupling.
+
+![Player moving and pickup up spheres](Gifs/M5Prog/Scoreboard.gif)
+
+[Player Movement Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/PlayerController.cs) \
+[Pickup Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/Pickup.cs) \
+[Scoreboard Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/ScoreBoard.cs)
+
+## PROG: OOP Abstractie
+
+### Oefening: Pickup & Trap Systeem
+
+Ik heb abstractie gebruikt om code te hergebruiken.
+
+![Player picking up collectables](Gifs/M6Prog/Collectable.gif)
+
+[Collectable Manager Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/CollectibleManager.cs) \
+[Collectable Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/Collectable.cs) \
+[Health Pickup Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/HealthPickup.cs) \
+[Coin Pickup Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/CoinPickup.cs) \
+[Damage Trap Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/DamageTrap.cs)
 
 </details>

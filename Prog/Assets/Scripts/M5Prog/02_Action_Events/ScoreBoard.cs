@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ScoreBoard : MonoBehaviour
 {
-    int score = 0;
     TMP_Text text;
+    int score = 0;
 
     private void Start()
     {
