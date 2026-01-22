@@ -45,7 +45,7 @@ Ik heb Action Events gebruikt.
 
 #### De Enemy schiet nooit
 
-delta.magnitude is altijd &gt; shotRange omdat shotRange gelijk aan 0 is.
+delta.magnitude is altijd &gt shotRange omdat shotRange gelijk aan 0 is.
 
 #### Het schot raakt de speler niet
 
@@ -93,7 +93,7 @@ Ik heb inheritance gebruikt.
 [Brute Script](Prog/Assets/Scripts/M5Prog/05_OOP_Inherritance/Brute.cs) \
 [Elf Script](Prog/Assets/Scripts/M5Prog/05_OOP_Inherritance/Elf.cs)
 
-### Opdracht 9, Encapsulation
+### Opdracht 9: Encapsulation
 
 Ik heb elke variable een voor een alle encapsulation veranderd
 
@@ -101,9 +101,203 @@ Ik heb elke variable een voor een alle encapsulation veranderd
 
 # M6Prog
 
+## Les 1 - Code Conventies in Unity
+
+### Opdracht 1
+
 Ik heb een inventory systeem gemaakt volgen de conventies.
 
 ![Items in inventory](Gifs/M6Prog/InventorySystem.gif)
 
 [Inventory System Script](Prog/Assets/Scripts/M6Prog/01_Code_Conventions/InventorySystem.cs) \
 [Inventory Item Script](Prog/Assets/Scripts/M6Prog/01_Code_Conventions/InventoryItem.cs)
+
+
+## PROG les 7: Class Diagrams
+
+### Opdracht 10: Class Diagram van je TD project
+
+Ik heb een class diagram van de TD project in mermaid gemaakt.
+
+```mermaid
+
+---
+title: Tower Defense
+---
+classDiagram
+
+    Flowfield ..> Cell
+    Flowfield ..> GridDirection
+    GridController ..> Flowfield
+    TowerController ..> PlayerStats
+    TowerController ..> BulletDamage
+    TowerSpawner ..> GridController
+    TowerSpawner ..> Cell
+    BulletDamage ..> EnemyController
+    EnemyController ..> GridController
+    EnemyController ..> PlayerStats
+    EnemyController ..> WaveSpawner
+    EnemyController ..> Cell
+    WaveSpawner ..> GridController
+    GridDirection <..> Cell
+
+    class Flowfield {
+        +Dictionary~string, TileBase~ tileDictionary
+        +Tilemap roughTerrainTilemap
+        +Tilemap impassibleTerrainTilemap
+        +Cell[,] grid
+        +Vector2Int gridSize
+        +float cellRadius
+        +float cellDiameter
+        -Cell destinationCell
+
+        +CreateGrid()
+        +CreateCostField()
+        +CreateIntegrationField(Cell destinationCell)
+        +CreateFlowfield()
+        +GetCardinalCells(Vector2Int nodeIndex, List~GridDirection~ directions) List~Cell~
+        +GetCellAtRelativePosition(Vector2Int originPosition, Vector2Int relativePosition) Cell
+        +WorldToCell(Vector3 worldPosition) Cell
+    }
+
+    class GridController {
+        +Tilemap roughTerrainTilemap
+        +Tilemap impassibleTerrainTilemap
+        +Vector2Int gridSize
+        +float cellradius
+        +Flowfield currentFlowfield
+
+        +InitializeFlowfield()
+        -Start()
+    }
+
+    class PlayerStats {
+        +int money
+        -TMP_Text healthDisplay
+        -TMP_Text moneyDisplay
+        -int health
+
+        +LoseHealth(int damage)
+        +ChangeMoney(int loss)
+    }
+
+    class Shop {
+        -GameObject ShopUI
+
+        +OnClick()
+    }
+
+    class TowerController {
+        -GameObject bulletPrefab 
+        -Text towerLevelDisplay 
+        -List~GameObject~ targetList
+        -PlayerStats playerStats 
+        -CircleCollider2D towerCollider 
+        -GameObject bullet 
+        -int level
+        -int damage
+        -float delay
+        -bool isAttacking
+
+        +UpgradeTower()
+        -TowerAttack()
+        -OnTriggerEnter2D(Collider2D other)
+        -OnTriggerExit2D(Collider2D other)
+        -Start()
+    }
+    
+    class TowerSpawner {
+        -Tilemap impassibleTerrainTilemap
+        -GridController gridController
+        -PlayerStats playerStats
+        -GameObject towerPrefab
+        -GameObject towerPreview
+        -Cell cellBelow
+        -Vector3 mousePosition
+        -Vector3 roundedMousePosition
+        -bool isPlacing
+
+        +PlaceTower()
+        +OnRightClick(InputAction.CallbackContext context)
+        +OnLeftClick(InputAction.CallbackContext context)
+        -Update()
+    }
+
+    class BulletDamage {
+        +Vector3 moveDirection
+        +int damage
+        -float speed
+        -float timer
+
+        -OnTriggerEnter2D(Collider2D collision)
+        -FixedUpdate()
+    }
+
+    class EnemyController {
+        -int health
+        -float speed
+        -GridController gridController
+        -WaveSpawner waveSpawner
+        -PlayerStats playerStats
+        -Cell cellBelow
+
+        +LoseHealth(int damage)
+        -FixedUpdate()
+        -Start()    
+    }
+
+    class WaveSpawner {
+        +int enemiesAlive
+        -GridController gridController
+        -TMP_Text WaveText
+        -GameObject[] enemyList
+        -int waveCount
+        -float delay
+        -float waveBudget
+        -Vector3 spawnPosition
+
+        +OnSpacebar(InputAction.CallbackContext context)
+        -SpawnWave()
+        -Start()
+    }
+
+    class Cell["Cell(Vector3 _worldPosition, Vector2Int _gridIndex)"] {
+        +Vector3 worldPosition
+        +Vector2Int gridIndex
+        +GridDirection bestDirection
+        +bool hasTower
+        +byte cost
+        +ushort bestCost
+
+        +SetCost(int amount)
+    }
+
+    class GridDirection["GridDirection(int x, int y)"] {
+        +Vector2Int vector
+        +GridDirection None
+        +GridDirection North
+        +GridDirection East
+        +GridDirection South
+        +GridDirection West
+
+        +GetDirectionFromVector(Vector2Int vector) GridDirection
+    }
+
+    class GridDebug {
+        +Sprite[] flowfieldIcons
+        -GridController gridController
+        -bool displayGrid
+        -FlowfieldDisplayType currentDisplayType
+
+        +DrawFlowfield()
+        +ClearCellDisplay()
+        -DisplayAllCells()
+        -DisplayDestinationCell()
+        -DisplayCell(Cell cell)
+        -DrawGrid(Vector2Int drawGridSize, Color drawColor, float drawCellRadius)
+        -OnDrawGizmos()
+        -OnValidate()
+    }
+```
+[TowerDefense Repository](https://github.com/38684/TowerDefense)
+
