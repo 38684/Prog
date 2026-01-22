@@ -1,4 +1,6 @@
-# Prog
+<details>
+
+<summary>M5Prog</summary>
 
 ## PROG les 1: Herhaling Functions, Classes en Arrays
 
@@ -98,8 +100,11 @@ Ik heb inheritance gebruikt.
 Ik heb elke variable een voor een alle encapsulation veranderd
 
 [PDF Link](Dependencies.pdf)
+</details>
 
-# M6Prog
+<details>
+
+<summary>M6Prog</summary>
 
 ## Les 1 - Code Conventies in Unity
 
@@ -361,3 +366,41 @@ classDiagram
 ```
 [TowerDefense Repository](https://github.com/38684/TowerDefense)
 
+
+## Les 3 - Data Structures in Unity
+
+### Oefening 1
+
+1. Bool
+2. MonoBehaviour
+3. Vector3
+4. Struct
+
+### Oefening 2
+
+```
+public class Enemy : MonoBehaviour {
+    public bool enemyType;
+
+    public struct Stats {
+        public float health;
+        public float damage;
+        public float speed;
+    }
+}
+```
+
+
+### Opdracht 3: Inventory & Item Management System
+
+Ik heb data structuren gebruikt om een inventory te maken.
+
+![](Gifs/M6Prog/Inventory.gif)
+
+[Inventory Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/Inventory.cs) \
+[Item Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/Item.cs) \
+[Item Stats Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/ItemStats.cs) \
+[Item Template Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/ItemTemplate.cs) \
+[Item Type Script](Prog/Assets/Scripts/M6Prog/03_Data_Structures/ItemType.cs)
+
+</details>
