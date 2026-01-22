@@ -8,7 +8,7 @@ Ik heb een Functions, Methods, Parameters & return type gebruikt.
 
 ![Balls falling](Gifs/M5Prog/CreateBall.gif)
 
-[CreateBall Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/Ball.cs)
+[CreateBall Script](Prog/Assets/Scripts/M5Prog/01_Herhaling_Functions_Classes_Arrays/Ball.cs)
 
 ### Opdracht 2 Class, Object, Constructor & Instantiate
 
@@ -16,7 +16,7 @@ Ik heb Class, Object, Constructor en Instantiate gebruikt.
 
 ![Towers spawning](Gifs/M5Prog/Towers.gif)
 
-[Game Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/Gvame.cs)
+[Game Script](Prog/Assets/Scripts/M5Prog/01_Herhaling_Functions_Classes_Arrays/Gvame.cs)
 
 ### Opdracht 3 List en loop
 
@@ -24,8 +24,8 @@ Ik heb Lists en loops gebruikt.
 
 ![Cubes spawneing](Gifs/M5Prog/EnemySpawner.gif)
 
-[Enemy Spawner Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/EnemySpawner.cs) \
-[Enemy Controller Script](Prog/Assets/Scripts/01_Herhaling_Functions_Classes_Arrays/EnemyController.cs)
+[Enemy Spawner Script](Prog/Assets/Scripts/M5Prog/01_Herhaling_Functions_Classes_Arrays/EnemySpawner.cs) \
+[Enemy Controller Script](Prog/Assets/Scripts/M5Prog/01_Herhaling_Functions_Classes_Arrays/EnemyController.cs)
 
 ## PROG les 2: Action Events
 
@@ -35,9 +35,9 @@ Ik heb Action Events gebruikt.
 
 ![Player moving and pickup up spheres](Gifs/M5Prog/Scoreboard.gif)
 
-[Player Movement Script](Prog/Assets/Scripts/02_Action_Events/PlayerController.cs) \
-[Pickup Script](Prog/Assets/Scripts/02_Action_Events/Pickup.cs) \
-[Scoreboard Script](Prog/Assets/Scripts/02_Action_Events/ScoreBoard.cs)
+[Player Movement Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/PlayerController.cs) \
+[Pickup Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/Pickup.cs) \
+[Scoreboard Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/ScoreBoard.cs)
 
 ## PROG les 3: Debugging
 
@@ -87,11 +87,11 @@ Ik heb inheritance gebruikt.
 
 ![Player shooting enemies](Gifs/M5Prog/ShootEnemies.gif)
 
-[Shoot From Camera Script](Prog/Assets/Scripts/05_OOP_Inherritance/ShootFromCamera.cs) \
-[Projectile Script](Prog/Assets/Scripts/05_OOP_Inherritance/Projectile.cs) \
-[Enemy Parent Script](Prog/Assets/Scripts/05_OOP_Inherritance/EnemyParent.cs) \
-[Brute Script](Prog/Assets/Scripts/05_OOP_Inherritance/Brute.cs) \
-[Elf Script](Prog/Assets/Scripts/05_OOP_Inherritance/Elf.cs)
+[Shoot From Camera Script](Prog/Assets/Scripts/M5Prog/05_OOP_Inherritance/ShootFromCamera.cs) \
+[Projectile Script](Prog/Assets/Scripts/M5Prog/05_OOP_Inherritance/Projectile.cs) \
+[Enemy Parent Script](Prog/Assets/Scripts/M5Prog/05_OOP_Inherritance/EnemyParent.cs) \
+[Brute Script](Prog/Assets/Scripts/M5Prog/05_OOP_Inherritance/Brute.cs) \
+[Elf Script](Prog/Assets/Scripts/M5Prog/05_OOP_Inherritance/Elf.cs)
 
 ### Opdracht 9, Encapsulation
 
@@ -101,3 +101,9 @@ Ik heb elke variable een voor een alle encapsulation veranderd
 
 # M6Prog
 
+Ik heb een inventory systeem gemaakt volgen de conventies.
+
+![Items in inventory](Gifs/M6Prog/InventorySystem.gif)
+
+[Inventory System Script](Prog/Assets/Scripts/M6Prog/01_Code_Conventions/InventorySystem.cs) \
+[Inventory Item Script](Prog/Assets/Scripts/M6Prog/01_Code_Conventions/InventoryItem.cs)
