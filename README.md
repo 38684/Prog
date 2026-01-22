@@ -103,6 +103,66 @@ Ik heb elke variable een voor een alle encapsulation veranderd
 
 ## Les 1 - Code Conventies in Unity
 
+### Oefening 1 
+
+```
+public class GameManager : MonoBehaviour
+{
+    public bool isPlayerDead;
+    public Int HP;
+    private float jumpPower;
+}
+```
+
+### Oefening 2
+
+```
+public class BaseEnemy : Monobehaviour
+{
+    [SerializeField] float speed = 9;
+    [SerializeField] int health = 100;
+
+    void TakeDamage(int damage)
+    {
+        health -= damage;
+    }
+
+    float CalculateRange(float modifier)
+    {
+        return range
+    }
+}
+
+public class Enemy : BaseEnemy
+{
+    [SerializeField] GameObject player;
+    [SerializeField] float attackRange = 2f;
+
+    void Attack()
+    {
+        // Attack logic
+    }
+
+    void OnTriggerEnter(Collision other)
+    {
+        if(other.CompareTag("Trap"))
+        {
+            TakeDamage(50);
+        }
+    }
+
+    void Update()
+    {
+        if (Distance(gameObject.transform,position, player.transform.position) > CalculateRange(speed/5)
+        {
+            Attack();
+        }
+    }
+    
+}
+
+```
+
 ### Opdracht 1
 
 Ik heb een inventory systeem gemaakt volgen de conventies.
