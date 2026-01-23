@@ -409,7 +409,7 @@ Ik heb data structuren gebruikt om een inventory te maken.
 
 Ik heb een score collection game gemaakt met loose coupling.
 
-![Player moving and pickup up spheres](Gifs/M5Prog/Scoreboard.gif)
+![Player beweegt en pakt ballen op](Gifs/M5Prog/Scoreboard.gif)
 
 [Player Movement Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/PlayerController.cs) \
 [Pickup Script](Prog/Assets/Scripts/M5Prog/02_Action_Events/Pickup.cs) \
@@ -421,12 +421,32 @@ Ik heb een score collection game gemaakt met loose coupling.
 
 Ik heb abstractie gebruikt om code te hergebruiken.
 
-![Player picking up collectables](Gifs/M6Prog/Collectable.gif)
+![Player pakt collectables](Gifs/M6Prog/Collectable.gif)
 
 [Collectable Manager Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/CollectibleManager.cs) \
 [Collectable Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/Collectable.cs) \
 [Health Pickup Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/HealthPickup.cs) \
 [Coin Pickup Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/CoinPickup.cs) \
 [Damage Trap Script](Prog/Assets/Scripts/M6Prog/05_OOP_Abstraction/DamageTrap.cs)
+
+## Polymorfisme
+
+### Praktische Opdracht: Battle Arena
+
+Ik heb polymorfisme gebruikt om een battle arena te maken.
+
+![Battle arena waar enemies je aanvallen](Gifs/M6Prog/BattleArena.gif)
+
+[Battle Manager Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/BattleManager.cs) \
+[Enemy Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Enemy.cs) \
+[Zombie Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Zombie.cs) \
+[Goblin Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Goblin.cs) \
+[Dragon Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Dragon.cs) \
+[Phoenix Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Phoenix.cs) \
+[Vampire Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Vampire.cs) \
+[Minotaur Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Minotaur.cs) \
+[Banshee Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Banshee.cs) \
+[Troll Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Troll.cs) \
+[Werewolf Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Werewolf.cs)
 
 </details>
