@@ -449,4 +449,46 @@ Ik heb polymorfisme gebruikt om een battle arena te maken.
 [Troll Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Troll.cs) \
 [Werewolf Script](Prog/Assets/Scripts/M6Prog/06_OOP_Polymophism/Werewolf.cs)
 
-</details>
+## Les 7 : Early Return Patterns
+
+### Practische Opdracht : Flatten the Pyramid
+
+Ik heb early returns gebruikt om code te denesten.
+
+```
+public bool IsPlayerReadyToAttack(Player player)
+{
+    if (player == null) return false;
+    
+    //Level1
+    if (!player.isAlive) return false;
+    
+    //Level
+    if (player.attackCooldown > 0) return false;
+
+    //Level3
+    if (player.target == null) return false;
+
+    //Level4
+    if (!player.target.isAlive) return false;
+
+    //Level5
+    if (Vector3.Distance(player.transform.position, 
+        player.target.transform.position) >= 5f)
+        return false;
+    
+    //Level6
+    // Nog meer geneste conditions met && en ||
+    if ((player.mana < 20 || !player.weaponEquipped) &&
+        (player.health <= 30 || !player.hasBuff("Strength")))
+        return false;
+
+    //Level7
+    if (player.isStunned || player.isSlowed) return false;
+    
+    //Level8
+    return true;
+}
+```
+
+</detais>
